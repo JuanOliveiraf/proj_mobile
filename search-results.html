@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto Mobile - Search Results</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./home.html">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="./newsletter.html">Assinar</a></li>
+                    <li><a class="nav__link" href="./admin.html">Admin</a></li>
+                </ul>
+            </nav>
+
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="container results" role="main">
+
+        <header class="results-header">
+            <h1 class="results-title">Resultados para: <q>trabalho remoto</q></h1>
+        </header>
+
+        <section class="results-list" aria-label="Resultados">
+            <!-- item -->
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 1: título de exemplo</a></h2>
+                    <div class="post__meta">
+                        <span>Categoria</span> ·
+                        <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 2: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 3: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 4: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 5: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 6: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 7: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card post">
+                <a href="#" class="post__media post__media--sm" aria-hidden="true"></a>
+                <div>
+                    <h2 class="post__title"><a href="#">Resultado 8: título de exemplo</a></h2>
+                    <div class="post__meta"><span>Categoria</span> · <time datetime="2025-07-31">31 Jul 2025</time>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- TAGS / FOOTER -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
