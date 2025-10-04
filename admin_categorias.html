@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile - Admin Categorias</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER reutilizado -->
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./home.html">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="./newsletter.html">Assinar</a></li>
+                    <li><a class="nav__link" href="./admin.html" aria-current="page">Admin</a></li>
+                </ul>
+            </nav>
+
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+        </div>
+    </header>
+
+    <!-- ======= CONTEÚDO ======= -->
+    <main class="container admin" role="main">
+
+        <div class="admin-layout">
+            <!-- SIDEBAR -->
+            <aside class="card admin-sidebar" aria-label="Menu de administração">
+                <h2 class="admin-sidebar__title">Menu</h2>
+                <ul class="admin-sidebar__list">
+                    <li><a href="#" class="link">Categorias</a></li>
+                    <li><a href="#" class="link">Criar Post</a></li>
+                    <li><a href="#" class="link">Escolhas do Editor</a></li>
+                    <li><a href="#" class="link">Usuários</a></li>
+                    <li><a href="#" class="link">Fila de revisão</a></li>
+                    <li><a href="#" class="link">Fila de comentários</a></li>
+                </ul>
+            </aside>
+
+            <!-- CONTEÚDO PRINCIPAL -->
+            <section class="admin-main">
+
+                <!-- STATS -->
+                <div class="stats">
+                    <article class="card stat">
+                        <span class="stat__label">Posts</span>
+                        <strong class="stat__value">128</strong>
+                    </article>
+                    <article class="card stat">
+                        <span class="stat__label">Visualizações</span>
+                        <strong class="stat__value">54k</strong>
+                    </article>
+                    <article class="card stat">
+                        <span class="stat__label">Inscritos</span>
+                        <strong class="stat__value">12k</strong>
+                    </article>
+                    <article class="card stat">
+                        <span class="stat__label">Pendências</span>
+                        <strong class="stat__value">7</strong>
+                    </article>
+                </div>
+
+                <!-- LISTA DE CATEGORIAS -->
+                <section class="card admin-block" aria-labelledby="cats-title">
+                    <header class="admin-block__header">
+                        <h2 id="cats-title">Categorias</h2>
+                        <div class="admin-block__search">
+                            <label class="sr-only" for="search-cats">Buscar categorias</label>
+                            <input id="search-cats" class="input input--pill" type="search"
+                                placeholder="Buscar categorias..." />
+                        </div>
+                    </header>
+
+                    <div class="table">
+                        <div class="table__head">
+                            <span>Categoria</span>
+                            <span class="sr-only">Ações</span>
+                        </div>
+
+                        <!-- ROW -->
+                        <div class="table__row">
+                            <span>Categoria #1</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Editar</button>
+                                <button class="btn btn--outline">Excluir</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Categoria #2</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Editar</button>
+                                <button class="btn btn--outline">Excluir</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Categoria #3</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Editar</button>
+                                <button class="btn btn--outline">Excluir</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Categoria #4</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Editar</button>
+                                <button class="btn btn--outline">Excluir</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Categoria #5</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Editar</button>
+                                <button class="btn btn--outline">Excluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- TAGS / FOOTER -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

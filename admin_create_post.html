@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile - Admin Create Post</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./home.html">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="./newsletter.html">Assinar</a></li>
+                    <li><a class="nav__link" href="./admin.html" aria-current="page">Admin</a></li>
+                </ul>
+            </nav>
+
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+        </div>
+    </header>
+
+    <main class="container admin" role="main">
+        <div class="admin-layout">
+            <!-- Sidebar -->
+            <aside class="card admin-sidebar" aria-label="Menu de administração">
+                <h2 class="admin-sidebar__title">Menu</h2>
+                <ul class="admin-sidebar__list">
+                    <li><a class="link" href="./admin.html">Categorias</a></li>
+                    <li><a class="link" href="./admin-create-post.html">Criar Post</a></li>
+                    <li><a class="link" href="#">Escolhas do Editor</a></li>
+                    <li><a class="link" href="#">Usuários</a></li>
+                    <li><a class="link" href="#">Fila de revisão</a></li>
+                    <li><a class="link" href="#">Fila de comentários</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main -->
+            <section class="admin-main">
+
+                <!-- Stats (reaproveito) -->
+                <div class="stats">
+                    <article class="card stat"><span class="stat__label">Posts</span><strong
+                            class="stat__value">128</strong></article>
+                    <article class="card stat"><span class="stat__label">Visualizações</span><strong
+                            class="stat__value">54k</strong></article>
+                    <article class="card stat"><span class="stat__label">Inscritos</span><strong
+                            class="stat__value">12k</strong></article>
+                    <article class="card stat"><span class="stat__label">Pendências</span><strong
+                            class="stat__value">7</strong></article>
+                </div>
+
+                <!-- Criar Post -->
+                <section class="card admin-block" aria-labelledby="create-title">
+                    <h2 id="create-title" class="admin-block__title">Criar Post</h2>
+
+                    <form class="post-form" action="#" method="post" novalidate>
+                        <div class="editor-box">
+                            <label class="sr-only" for="title">Título</label>
+                            <input id="title" class="input input--pill" type="text" name="title" placeholder="Título"
+                                required />
+
+                            <label class="sr-only" for="content">Conteúdo</label>
+                            <textarea id="content" class="textarea" name="content"
+                                placeholder="Escreva aqui... (Editor simulador)"></textarea>
+
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label class="sr-only" for="tags">Categorias e tags</label>
+                                    <input id="tags" class="input input--pill" type="text" name="tags"
+                                        placeholder="Categorias e tags" />
+                                </div>
+
+                                <div class="form-col">
+                                    <label class="file">
+                                        <input type="file" name="cover" accept="image/*" />
+                                        <span class="file__label">Upload da imagem de capa</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--outline">Salvar rascunho</button>
+                            <button type="button" class="btn btn--outline">Enviar para revisão</button>
+                            <button type="submit" class="btn btn--success">Publicar (admin)</button>
+                        </div>
+                    </form>
+                </section>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Tags / Footer -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

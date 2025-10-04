@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile - Admin Escolhas Editor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./home.html">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="./newsletter.html">Assinar</a></li>
+                    <li><a class="nav__link" href="./admin.html" aria-current="page">Admin</a></li>
+                </ul>
+            </nav>
+
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+        </div>
+    </header>
+
+    <main class="container admin" role="main">
+        <div class="admin-layout">
+            <!-- Sidebar -->
+            <aside class="card admin-sidebar" aria-label="Menu de administração">
+                <h2 class="admin-sidebar__title">Menu</h2>
+                <ul class="admin-sidebar__list">
+                    <li><a class="link" href="./admin.html">Categorias</a></li>
+                    <li><a class="link" href="./admin-create-post.html">Criar Post</a></li>
+                    <li><a class="link" href="./admin-editor-picks.html">Escolhas do Editor</a></li>
+                    <li><a class="link" href="#">Usuários</a></li>
+                    <li><a class="link" href="#">Fila de revisão</a></li>
+                    <li><a class="link" href="#">Fila de comentários</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main -->
+            <section class="admin-main">
+
+                <!-- Stats -->
+                <div class="stats">
+                    <article class="card stat"><span class="stat__label">Posts</span><strong
+                            class="stat__value">128</strong></article>
+                    <article class="card stat"><span class="stat__label">Visualizações</span><strong
+                            class="stat__value">54k</strong></article>
+                    <article class="card stat"><span class="stat__label">Inscritos</span><strong
+                            class="stat__value">12k</strong></article>
+                    <article class="card stat"><span class="stat__label">Pendências</span><strong
+                            class="stat__value">7</strong></article>
+                </div>
+
+                <!-- Escolhas do Editor -->
+                <section class="card admin-block" aria-labelledby="picks-title">
+                    <header class="admin-block__header">
+                        <h2 id="picks-title">Escolhas do Editor</h2>
+                        <div class="admin-block__search">
+                            <label class="sr-only" for="search-picks">Buscar posts</label>
+                            <input id="search-picks" class="input input--pill" type="search"
+                                placeholder="Buscar posts..." />
+                        </div>
+                    </header>
+
+                    <div class="table">
+                        <div class="table__head">
+                            <span>Post</span>
+                            <span class="sr-only">Ações</span>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Post #1</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline-success">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Post #2</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Agendar</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Post #3</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Agendar</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Post #4</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline-success">Remover</button>
+                            </div>
+                        </div>
+
+                        <div class="table__row">
+                            <span>Post #5</span>
+                            <div class="table__actions">
+                                <button class="btn btn--outline">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Tagbar + Footer -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
