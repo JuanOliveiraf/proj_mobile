@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile - Página Newsletter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./home.html">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="./newsletter.html" aria-current="page">Assinar</a></li>
+                    <li><a class="nav__link" href="#">Admin</a></li>
+                </ul>
+            </nav>
+
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="container" role="main">
+        <section class="surface-box" aria-labelledby="newsletter-title">
+            <article class="card card--newsletter">
+                <h1 id="newsletter-title" class="page-title">Assine a newsletter</h1>
+
+                <form class="form" action="#" method="post" novalidate>
+                    <div class="form-group">
+                        <label class="sr-only" for="email">E-mail</label>
+                        <input class="input" type="email" id="email" name="email" placeholder="E-mail" required
+                            aria-describedby="help" />
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="consent" name="consent" required />
+                        <label for="consent">
+                            Concordo em receber comunicações e li a <a href="#" class="link">política de
+                                privacidade</a>.
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn--success" type="submit">Assinar</button>
+                    </div>
+
+                    <p id="help" class="form-help">Enviamos no máximo 1–2 e-mails por semana. Você pode cancelar quando
+                        quiser.</p>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- TAGS / FOOTER (reaproveito da home) -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

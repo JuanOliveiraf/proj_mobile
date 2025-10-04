@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile - Página Inicial</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" role="banner">
+
+        <div class="container header__inner">
+
+            <!-- Marca -->
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <!-- Navegação -->
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#" aria-current="page">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="#">Assinar</a></li>
+                    <li><a class="nav__link" href="#">Admin</a></li>
+                </ul>
+            </nav>
+
+            <!-- Busca + ações -->
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+
+        </div>
+
+    </header>
+
+    <section class="topics" aria-labelledby="topics-title">
+        <div class="container topics__inner">
+            <!-- Texto / CTA -->
+            <header class="section-header">
+                <h2 id="topics-title" class="section-title">Navegue por tópicos de interesse</h2>
+                <p class="section-subtitle">
+                    Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.
+                </p>
+
+                <div class="section-actions">
+                    <button class="btn btn--outline" type="button">Explorar categorias</button>
+                    <button class="btn btn--outline" type="button">Assine a newsletter</button>
+                </div>
+            </header>
+
+            <!-- “Arte”/banner vazio (só um placeholder) -->
+            <aside class="topics__aside" aria-hidden="true"></aside>
+        </div>
+    </section>
+
+    <!-- ================== CATEGORIAS POPULARES ================== -->
+    <section class="popular" aria-labelledby="popular-title">
+        <div class="container">
+            <h3 id="popular-title" class="section-kicker">Categorias Populares</h3>
+
+            <div class="popular__grid">
+                <a href="#" class="big-card" aria-label="Work">
+                    <span>Work</span>
+                </a>
+                <a href="#" class="big-card" aria-label="Books">
+                    <span>Books</span>
+                </a>
+                <a href="#" class="big-card" aria-label="Techno">
+                    <span>Techno</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== TODAS AS CATEGORIAS (chips) ================== -->
+    <section class="all-cats" aria-labelledby="allcats-title">
+        <div class="container">
+            <h3 id="allcats-title" class="section-kicker">Todas as Categorias</h3>
+
+            <nav class="chips" aria-label="Categorias">
+                <a class="chip" href="#">Negócios</a>
+                <a class="chip" href="#">Techno</a>
+                <a class="chip" href="#">Produtividade</a>
+                <a class="chip" href="#">Filmes</a>
+                <a class="chip" href="#">Lifestyle</a>
+                <a class="chip" href="#">Educação</a>
+                <a class="chip" href="#">Mailing</a>
+                <a class="chip" href="#">eCommerce</a>
+                <a class="chip" href="#">Alimentação</a>
+                <a class="chip" href="#">Social</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ================== DESTAQUES + ESCOLHAS DO EDITOR ================== -->
+    <section class="featured" aria-labelledby="featured-title">
+        <div class="container featured__inner">
+            <h3 id="featured-title" class="section-kicker sr-only">Destaques</h3>
+
+            <!-- Lista de posts em destaque -->
+            <div class="posts">
+                <h4 class="block-title">Postagens em Destaque</h4>
+
+                <article class="post">
+                    <a href="#" class="post__media" aria-hidden="true"></a>
+                    <div class="post__content">
+                        <div class="post__meta">
+                            <time datetime="2025-07-31">31 Jul 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span>Destaque</span>
+                        </div>
+                        <h5 class="post__title"><a href="#">Erros de Design que Todos Devem Evitar</a></h5>
+                        <div class="post__read">3 min de leitura</div>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <a href="#" class="post__media" aria-hidden="true"></a>
+                    <div class="post__content">
+                        <div class="post__meta">
+                            <time datetime="2025-07-31">31 Jul 2025</time>
+                            <span aria-hidden="true">•</span>
+                            <span>Destaque</span>
+                        </div>
+                        <h5 class="post__title"><a href="#">As Maiores Empresas por Receita</a></h5>
+                        <div class="post__read">5 min de leitura</div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Caixa lateral: escolhas do editor -->
+            <aside class="editor-picks" aria-labelledby="editor-title">
+                <h4 id="editor-title" class="block-title">Escolhas do Editor</h4>
+                <ul class="editor-list">
+                    <li><a href="#">O uso negativo da internet</a></li>
+                    <li><a href="#">O segredo do brainstorm</a></li>
+                    <li><a href="#">Escalar para pequenos negócios</a></li>
+                    <li><a href="#">O futuro do trabalho remoto</a></li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ================== TAG BAR / RODAPÉ ================== -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

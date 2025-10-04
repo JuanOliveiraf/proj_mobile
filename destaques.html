@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mobile - Página Destaques</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header__inner">
+
+            <a href="./home.html" class="brand" aria-label="Página Inicial">
+                <span class="brand__name">HABIT</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu Principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="./home.html">Início</a></li>
+                    <li><a class="nav__link" href="#">Páginas</a></li>
+                    <li><a class="nav__link" href="#">Destaques</a></li>
+                    <li><a class="nav__link" href="#">Assinar</a></li>
+                    <li><a class="nav__link" href="#">Admin</a></li>
+                </ul>
+            </nav>
+
+            <form class="header-search" role="search" aria-label="Buscar no site">
+                <label class="sr-only" for="q"></label>
+                <input id="q" name="q" type="search" placeholder="Buscar..." />
+                <button class="btn btn--outline" type="submit">Buscar</button>
+                <a class="btn btn--outline" href="#">Entrar</a>
+            </form>
+
+        </div>
+    </header>
+
+    <!-- ======= CONTEÚDO ======= -->
+    <main class="category container" role="main">
+
+        <!-- Título + filtros -->
+        <header class="page-header">
+            <h1 class="page-title">Destaques</span></h1>
+        </header>
+
+        <!-- Grid de posts -->
+        <section class="cards" aria-label="Lista de postagens">
+            <div class="cards__grid">
+
+                <!-- Card (repita quantos quiser) -->
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 1</a></h2>
+
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 2</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 3</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 4</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 5</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 6</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 7</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 8</a></h2>
+                </article>
+
+                <article class="card post-card">
+                    <a href="#" class="post-card__media" aria-hidden="true"></a>
+                    <h2 class="post-card__title"><a href="#">Destaque 9</a></h2>
+                </article>
+
+            </div>
+
+            <div class="cards__actions">
+                <button class="btn btn--outline" type="button">Carregar mais</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- TAG BAR (reuso da home) -->
+    <section class="tagbar" aria-label="Tags populares">
+        <div class="container tagbar__inner">
+            <a class="chip chip--soft" href="#">Instagram</a>
+            <a class="chip chip--soft" href="#">Work</a>
+            <a class="chip chip--soft" href="#">Bags</a>
+            <a class="chip chip--soft" href="#">Lamp</a>
+            <a class="chip chip--soft" href="#">Books</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <small>© 2025 Meu Site • <a href="#">Meu site</a></small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
